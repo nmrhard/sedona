@@ -1,0 +1,377 @@
+:root {
+    --basic-black: #000000;
+    --basic-dark: #333333;
+    --basic-white: #ffffff;
+    --basic-blue: #81B3D2;
+    --basic-grey: #eeeeee;
+    --basic-light-grey: #f2f2f2;
+    --basic-dark-grey: #888888;
+    --basic-darken-grey: #666666;
+    --basic-brown: #766357;
+
+    --hover-brown: #604E43;
+    --active-brown: #503E33;
+    --hover-blue: #669EC0;
+    --active-blue: #5496BD;
+
+    --sort-grey: #CACACA;
+
+    --opacity-white: rgba(255, 255, 255, 0.3)
+}
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    background-color: var(--basic-dark-grey);
+    color: var(--basic-dark);
+}
+
+a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+  background-color: var(--basic-white);
+}
+
+.main-nav {
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  color: var(--basic-black);
+}
+
+.main-nav__link:hover {
+  color: var(--basic-blue);
+}
+
+.main-nav__link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.main-nav__link--active {
+  color: var(--basic-brown);
+}
+
+.features {
+  background-color: var(--basic-white);
+}
+
+.feature__slogan {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.feature__sub-slogan {
+  line-height: 26px;
+  text-align: center;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.feature__item--blue {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.advantage__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.advantage__text {
+  color: var(--basic-dark);
+}
+
+.feature__item--grey {
+  background-color: var(--basic-grey);
+}
+
+.search {
+  background-color: var(--basic-white);
+}
+
+.search__title {
+  font-size: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.search__text {
+  line-height: 24px;
+  text-align: center;
+}
+
+.button {
+  font-weight: bold;
+  color: var(--basic-white);
+  border: none;
+  cursor: pointer;
+}
+
+.button--search,
+.button--submit {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+
+.button--brown {
+  background-color: var(--basic-brown);
+}
+
+.button--brown:hover {
+  background-color: var(--hover-brown);
+}
+
+.button--brown:active {
+  background-color: var(--active-brown);
+  color: var(--opacity-white);
+}
+
+.button--blue {
+  background-color: var(--basic-blue);
+}
+
+.button--blue:hover {
+  background-color: var(--hover-blue);
+}
+
+.button--blue:active {
+  background-color: var(--active-blue);
+  color: var(--opacity-white);
+}
+
+.contacts {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.contact__phone {
+  color: inherit;
+}
+
+.contact__phone:hover {
+  color: var(--basic-blue);
+}
+
+.contact__phone:active {
+  opacity: 0.3;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__link {
+  background-color: var(--basic-blue);
+}
+
+.social__link:hover {
+  background-color: var(--hover-blue);
+}
+
+.social__link:active {
+  background-color: var(--active-blue);
+}
+
+.copyright {
+  line-height: 26px;
+  color: var(--basic-black)
+}
+
+.filter__field {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: var(--basic-white);
+}
+
+.filter__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter__button {
+  font: inherit;
+  background: transparent;
+  border: 2px solid currentColor;
+  border-radius: 2px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.sort {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sort__result {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.sort-title {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort__link {
+  opacity: 0.3;
+  color: var(--basic-black);
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sort__link--active {
+  border: none;
+  color: var(--basic-blue);
+  opacity: 1;
+}
+
+.sort__link:hover:not(.sort__link--active) {
+  color: var(--basic-blue);
+  opacity: 1;
+}
+
+.sort__link:active:not(.sort__link--active) {
+  border: none;
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+price-sort__link {
+  cursor: pointer;
+}
+
+.price-sort__link--down {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid var(--basic-grey);
+}
+
+.price-sort__link--up {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid var(--basic-grey);
+}
+
+.price-sort__link--down:hover:not(.price-sort__link--active),
+.price-sort__link--up:hover:not(.price-sort__link--active) {
+  border-bottom-color: var(--basic-black);
+  border-top-color: var(--basic-black);
+}
+
+.price-sort__link--down:active:not(.price-sort__link--active),
+.price-sort__link--up:active:not(.price-sort__link--active) {
+  border-bottom-color: var(--basic-blue);
+  border-top-color: var(--basic-blue);
+}
+
+.price-sort__link--active {
+  border-bottom-color: var(--basic-blue);
+  border-top-color: var(--basic-blue);
+}
+
+.hotels__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hotel__title {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.hotel__link {
+  color: inherit;
+}
+
+.hotel__link:hover {
+  color: var(--basic-blue);
+}
+
+.hotel__link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.hotel__rating-number {
+  background-color: var(--basic-light-grey);
+  color: var(--basic-darken-grey);
+}
+
+.search__label {
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.search__field,
+.search__field::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  opacity: 1;
+}
