@@ -19,6 +19,8 @@
     --opacity-white: rgba(255, 255, 255, 0.3)
 }
 
+/* Global parametrs */
+
 body {
     min-width: 1200px;
     margin: 0;
@@ -40,6 +42,8 @@ a {
     max-width: 100%;
     height: auto;
 }
+
+/* Main page */
 
 .header {
   background-color: var(--basic-white);
@@ -328,6 +332,9 @@ price-sort__link {
   border-bottom-color: var(--basic-blue);
   border-top-color: var(--basic-blue);
 }
+
+
+/* Hotel page */
 
 .hotels__list {
   margin: 0;
