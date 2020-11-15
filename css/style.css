@@ -132,6 +132,8 @@ a {
 
 .main-nav__item {
   width: 22%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .main-nav__item:nth-child(4n + 2) {
@@ -148,10 +150,6 @@ a {
 }
 
 .main-nav__link {
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
   color: var(--basic-black);
 }
 
@@ -188,8 +186,10 @@ a {
 /* Features */
 
 .features {
+  position: relative;
   padding-top: 42px;
   background-color: var(--basic-white);
+  z-index: 2;
 }
 
 .feature__slogan {
@@ -341,6 +341,18 @@ a {
   padding-top: 58px;
   background-color: var(--basic-white);
   text-align: center;
+  z-index: 1;
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--basic-white);
+  z-index: -1;
 }
 
 .search__row input {
@@ -389,6 +401,33 @@ a {
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   transform: translateX(-50%);
   box-sizing: border-box;
+  z-index: -2;
+}
+
+.search__form--hide {
+  visibility: hidden;
+}
+
+.search__form--show {
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.search__form--close {
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  0% { transform: translate(-50%, -100%); }
+  100% { transform: translate(-50%, 0); }
+}
+
+@keyframes slideUp {
+  0% { transform: translate(-50%, 0); }
+  100% { transform: translate(-50%, -100%); }
 }
 
 .search__row {
