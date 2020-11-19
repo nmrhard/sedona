@@ -748,7 +748,7 @@ a {
 }
 
 .filter__togglel--max {
-  left: 253px;
+  left: 297px;
 }
 
 .filter__toggle:hover {
@@ -756,8 +756,9 @@ a {
 }
 
 .filter__bar {
+  position: relative;
   height: 2px;
-  width: 80%;
+  width: 100%;
   background-color: var(--basic-white);
 }
 
